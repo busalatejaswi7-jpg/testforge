@@ -1,59 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>TestForge</title>
-    
-       <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestForge - Master Your Exams</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-
-<nav>
-    <h2>TestForge</h2>
-    <a href="#">Home</a>
-    <a href="#">Tests</a>
-    <a href="#">Login</a>
-</nav>
-
-
-<div class="section">
-    <h1>Master Your Exams with Smart Test Series</h1>
-    <p>Practice Smart. Rank Faster.</p>
-    <button>Start Practice</button>
-</div>
-
-
-<div class="section">
-    <h2>Available Tests</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Java Basics</h3>
-            <p>30 mins | 20 Questions</p>
-            <button>Start Test</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <span class="brand-icon">&#9670;</span>
+                TestForge
+            </a>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#tests" class="nav-link">Tests</a>
+                <a href="#upload" class="nav-link">Upload</a>
+                <a href="#" class="nav-link btn-login">Log In</a>
+            </div>
         </div>
+    </nav>
 
-        <div class="card">
-            <h3>Aptitude</h3>
-            <p>45 mins | 25 Questions</p>
-            <button>Start Test</button>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Smart Test Preparation Platform</span>
+            <h1 class="hero-title">Master Your Exams<br>with Smart Test Series</h1>
+            <p class="hero-subtitle">Practice smarter, not harder. Access curated test series, track your progress, and climb the leaderboard with data-driven insights.</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary btn-lg">
+                    Start Practicing
+                    <span class="btn-arrow">&rarr;</span>
+                </button>
+                <button class="btn btn-outline btn-lg">Learn More</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Practice Tests</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Pass Rate</span>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+        <div class="hero-glow"></div>
+    </section>
 
-<div class="section">
-    <h2>Upload Test Series</h2>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">&#9201;</div>
+                    <h3>Timed Tests</h3>
+                    <p>Simulate real exam conditions with accurately timed practice sessions.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#9733;</div>
+                    <h3>Instant Results</h3>
+                    <p>Get detailed performance analytics and scores the moment you finish.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#9776;</div>
+                    <h3>Leaderboard</h3>
+                    <p>Compete with peers and track your ranking across all test series.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <input type="text" placeholder="Test Name"><br>
-    <input type="text" placeholder="Duration"><br>
-    <input type="text" placeholder="Number of Questions"><br>
+    <!-- Available Tests Section -->
+    <section id="tests" class="section tests-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Browse Tests</span>
+                <h2 class="section-title">Available Test Series</h2>
+                <p class="section-subtitle">Choose from our curated collection of practice tests designed by industry experts.</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-badge">Popular</div>
+                    <div class="card-icon">&#9741;</div>
+                    <h3 class="card-title">Java Basics</h3>
+                    <p class="card-description">Core Java concepts including OOP, collections, and exception handling.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <span class="meta-icon">&#9201;</span>
+                            30 mins
+                        </span>
+                        <span class="meta-item">
+                            <span class="meta-icon">&#9998;</span>
+                            20 Questions
+                        </span>
+                    </div>
+                    <div class="card-difficulty">
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot"></span>
+                        <span class="difficulty-label">Intermediate</span>
+                    </div>
+                    <button class="btn btn-primary btn-block">Start Test</button>
+                </div>
 
-   <div class="upload-box">
-    Drag & Drop CSV File Here
-</div>
-    <button>Upload File</button>
-</div>
+                <div class="card">
+                    <div class="card-badge card-badge-new">New</div>
+                    <div class="card-icon">&#9881;</div>
+                    <h3 class="card-title">Aptitude</h3>
+                    <p class="card-description">Quantitative aptitude, logical reasoning, and verbal ability questions.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <span class="meta-icon">&#9201;</span>
+                            45 mins
+                        </span>
+                        <span class="meta-item">
+                            <span class="meta-icon">&#9998;</span>
+                            25 Questions
+                        </span>
+                    </div>
+                    <div class="card-difficulty">
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot"></span>
+                        <span class="difficulty-dot"></span>
+                        <span class="difficulty-label">Beginner</span>
+                    </div>
+                    <button class="btn btn-primary btn-block">Start Test</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">&#128736;</div>
+                    <h3 class="card-title">Data Structures</h3>
+                    <p class="card-description">Arrays, linked lists, trees, graphs, and algorithm complexity.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">
+                            <span class="meta-icon">&#9201;</span>
+                            60 mins
+                        </span>
+                        <span class="meta-item">
+                            <span class="meta-icon">&#9998;</span>
+                            30 Questions
+                        </span>
+                    </div>
+                    <div class="card-difficulty">
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-label">Advanced</span>
+                    </div>
+                    <button class="btn btn-primary btn-block">Start Test</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="section upload-section">
+        <div class="container">
+            <div class="upload-wrapper">
+                <div class="upload-info">
+                    <span class="section-label">For Educators</span>
+                    <h2 class="section-title">Upload Your Test Series</h2>
+                    <p class="section-subtitle">Create and share your own test series with students. Simply fill in the details and upload a CSV file with your questions.</p>
+                    <ul class="upload-features">
+                        <li>Supports CSV format for bulk question upload</li>
+                        <li>Auto-grading with instant result generation</li>
+                        <li>Track student performance with analytics dashboard</li>
+                    </ul>
+                </div>
+                <div class="upload-form-wrapper">
+                    <form class="upload-form">
+                        <div class="form-group">
+                            <label class="form-label" for="testName">Test Name</label>
+                            <input type="text" id="testName" class="form-input" placeholder="e.g., Java Advanced Concepts">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="duration">Duration (mins)</label>
+                                <input type="text" id="duration" class="form-input" placeholder="e.g., 45">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="questions">Questions</label>
+                                <input type="text" id="questions" class="form-input" placeholder="e.g., 25">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Question File</label>
+                            <div class="upload-box" id="dropZone">
+                                <div class="upload-box-icon">&#128196;</div>
+                                <p class="upload-box-text">Drag & drop your CSV file here</p>
+                                <p class="upload-box-hint">or click to browse files</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">
+                            Upload Test Series
+                            <span class="btn-arrow">&rarr;</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">&#9670;</span>
+                    <span class="footer-brand-name">TestForge</span>
+                </div>
+                <p class="footer-text">Built for students who aim higher.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
